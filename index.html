@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Компьютерная безопасность</title>
+    <link rel="icon" href="photo_2023-12-18_16-18-13.jpg">
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <header id="header">
+        <h1>Tymol - с нами ваш компьютер в безопасности</h1>
+    </header>
+
+    <nav id="navigation">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <main id="content">
+        <h2>На этом сайте, вы сможете познакомится с нашей компанией и оставить свою заявку!</h2>
+
+        <table>
+            <tr>
+                <td>Оставте нам свои данные, с вами свяжется наш специалист:</td>
+            </tr>
+        </table>
+
+        <form id="myForm">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="phone number">Номер телефона:</label>
+            <input type="phone number" id="phone number" name="phone number" required><br><br>
+            
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea><br><br>
+            
+            <input type="submit" value="Отправить" class="button">
+        </form>
+
+        <p class="message">Данные записаны</p>
+        
+        <script>
+            document.getElementById("myForm").addEventListener("submit", function(event){
+                event.preventDefault();
+                var message = document.getElementsByClassName("message");
+                message[0].style.display = "block";
+            });
+        </script>
+
+        <iframe src="КАК ПРОВЕРИТЬ ВИНДОВС НА ВИРУСЫ_.mp4" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+
+        <img src="1617232780_21-p-sovremennii-ofis-21.jpg" width="565"  alt="Изображение 1">
+        <img src="_FRO8305.jpg" width="485" alt="Изображение 2">
+        <img src="02.1573212643.7097.jpg" width="480" alt="Изображение 3">
+        <img src="20181207211240_ed8326c8ef40cf.jpg" width="485" alt="Изображение 4">
+    </main>
+</body>
+</html>
+   
